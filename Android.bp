@@ -31,3 +31,122 @@ cc_prebuilt_library_shared {
         },
 	proprietary: true,
 }
+
+cc_prebuilt_library_shared {
+        name: "libged",
+        compile_multilib: "both",
+	multilib: {
+            lib32: {
+                srcs: ["exclude/lib/libged.so"],
+            },
+            lib64: {
+                srcs: ["exclude/lib64/libged.so"],
+            },
+        },
+        strip: {
+            none:true,
+        },
+	proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+        name: "libOpenCL",
+        compile_multilib: "both",
+	multilib: {
+            lib32: {
+                srcs: ["exclude/lib/libOpenCL.so"],
+            },
+            lib64: {
+                srcs: ["exclude/lib64/libOpenCL.so"],
+            },
+        },
+        strip: {
+            none:true,
+        },
+	proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+        name: "libdpframework",
+        compile_multilib: "both",
+	multilib: {
+            lib32: {
+                srcs: ["exclude/lib/libdpframework.so"],
+            },
+            lib64: {
+                srcs: ["exclude/lib64/libdpframework.so"],
+            },
+        },
+        strip: {
+            none:true,
+        },
+	proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+        name: "libion_mtk",
+        compile_multilib: "both",
+	multilib: {
+            lib32: {
+                srcs: ["exclude/lib/libion_mtk.so"],
+            },
+            lib64: {
+                srcs: ["exclude/lib64/libion_mtk.so"],
+            },
+        },
+        strip: {
+            none:true,
+        },
+	proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+        name: "librilmtk",
+        compile_multilib: "both",
+	multilib: {
+            lib32: {
+                srcs: ["exclude/lib/librilmtk.so"],
+            },
+            lib64: {
+                srcs: ["exclude/lib64/librilmtk.so"],
+            },
+        },
+        strip: {
+            none:true,
+        },
+	proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+        name: "mtk-ril",
+        compile_multilib: "both",
+	multilib: {
+            lib32: {
+                srcs: ["exclude/lib/mtk-ril.so"],
+            },
+            lib64: {
+                srcs: ["exclude/lib64/mtk-ril.so"],
+            },
+        },
+        strip: {
+            none:true,
+        },
+	proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+        name: "libcam3_utils",
+        compile_multilib: "both",
+	multilib: {
+            lib32: {
+                srcs: ["exclude/lib/libcam3_utils.so"],
+            },
+            lib64: {
+                srcs: ["exclude/lib64/libcam3_utils.so"],
+            },
+        },
+        strip: {
+            none:true,
+        },
+	proprietary: true,
+}
