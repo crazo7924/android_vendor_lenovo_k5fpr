@@ -726,7 +726,7 @@ service MtkCodecService /vendor/bin/MtkCodecService
     group audio media sdcard_r
 
 # Charger
-service charger /system/bin/charger
+service charger /system/bin/healthd
     class charger
     group system shell input graphics
     seclabel u:r:charger:s0
