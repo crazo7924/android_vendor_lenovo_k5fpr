@@ -726,14 +726,10 @@ service MtkCodecService /vendor/bin/MtkCodecService
     group audio media sdcard_r
 
 # Charger
-service charger /system/bin/healthd
+service charger /sbin/charger
     class charger
     group system shell input graphics
     seclabel u:r:charger:s0
-
-on charger && property:ro.hardware=mt*
-    write /sys/class/leds/lcd-backlight/trigger "backlight"
-    write /sys/class/android_usb/android0/enable 1
 
 on charger
      class_start charger
