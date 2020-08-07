@@ -7,4 +7,7 @@ PRODUCT_PACKAGES += \
     libion_mtk \
     librilmtk \
     mtk-ril \
-    libcam3_utils
+    libcam3_utils \
+    libmal \
+    libmdfx
+

@@ -150,3 +150,37 @@ cc_prebuilt_library_shared {
         },
 	proprietary: true,
 }
+
+cc_prebuilt_library_shared {
+        name: "libmal",
+        compile_multilib: "both",
+        multilib: {
+            lib32: {
+                srcs: ["exclude/lib/libmal.so"],
+            },
+            lib64: {
+                srcs: ["exclude/lib64/libmal.so"],
+            },
+        },
+        strip: {
+            none:true,
+        },
+        proprietary: true,
+}
+
+cc_prebuilt_library_shared {
+        name: "libmdfx",
+        compile_multilib: "both",
+        multilib: {
+            lib32: {
+                srcs: ["exclude/lib/libmdfx.so"],
+            },
+            lib64: {
+                srcs: ["exclude/lib64/libmdfx.so"],
+            },
+        },
+        strip: {
+            none:true,
+        },
+        proprietary: true,
+}
