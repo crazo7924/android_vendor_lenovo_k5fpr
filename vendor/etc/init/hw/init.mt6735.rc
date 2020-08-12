@@ -725,11 +725,8 @@ service MtkCodecService /vendor/bin/MtkCodecService
     user system
     group audio media sdcard_r
 
-# Charger
-service charger /sbin/charger
+service battery_charger /charger
     class charger
-    group system shell input graphics
-    seclabel u:r:charger:s0
-
-on charger
-     class_start charger
+    user root
+    critical
+    seclabel u:r:healthd:s0
