@@ -728,6 +728,7 @@ service MtkCodecService /vendor/bin/MtkCodecService
 # Charger
 service charger /sbin/charger
     class charger
+    user root
     group system shell input graphics
     seclabel u:r:charger:s0
 
